@@ -1,4 +1,4 @@
-// pages/lunwen/lunwen.js
+// pages/weblunwen/weblunwen.js
 Page({
 
   /**
@@ -62,16 +62,5 @@ Page({
    */
   onShareAppMessage() {
 
-  },
-  clickCopy:function(e){
-    let ad = e.currentTarget.dataset.address
-    wx.setClipboardData({
-      data: ad,
-      success(res){
-        wx.showToast({
-          title: '复制链接成功',
-        })
-      }
-    })
   }
 })
